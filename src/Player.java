@@ -107,6 +107,7 @@ public class Player { //THIS IS OUR PLAYER YAY!
             if(hitBox.intersects(coin.hitBox)){ //checking whether our hit box intersects with the wall's 
                 if (coin.getHit() == false){
                     coin.setHit();
+                    coin.setValue();
                     points+=coin.value;
                 }
 

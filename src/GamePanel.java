@@ -155,11 +155,16 @@ public class GamePanel extends JPanel implements ActionListener{
         player.xspeed = 0;
         player.yspeed = 0;
 
+        this.reset = true;
+
         cameraX = 150;
 
-        //makeWalls();
-        //for(Coin coin: coins) coin.hitFalse();
+        //THIS FIXED THE COIN GLITCH clear the list when reset is true and repopulate
         makeCoins();
+        if(reset == true){
+            coins.clear();
+            makeCoins();
+        }
         animatedWalls();
 
 
