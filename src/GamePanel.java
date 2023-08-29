@@ -221,7 +221,7 @@ public class GamePanel extends JPanel implements ActionListener{
 
         //INTO SCREEN
         if(start == true){
-            for(Wall introWall: introWalls)introWall.draw(gtd);
+            for(Wall introWall: introWalls)introWall.drawBrick(gtd);
             introScreen.paint(gtd);
 
             //START BUTTON(UNCOMMENT LINES TO TEST)
@@ -344,10 +344,12 @@ public class GamePanel extends JPanel implements ActionListener{
 
     public void animatedWalls(){  // This Method is for the opening screen animation
         for(int i = 100; i<50000; i+=100){
-            introWalls.add(new Wall(i, 600,100,100));
+            Wall brick = new Wall(i,600,100,100);
+            introWalls.add(brick);
         }
         for(int i = 100; i<50000; i+=100){
-            introWalls.add(new Wall(i, 0,100,100));
+            Wall brick = new Wall(i,0,100,100);
+            introWalls.add(brick);
         }
     }
     /* 

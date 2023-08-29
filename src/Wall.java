@@ -46,6 +46,14 @@ public class Wall {
         gtd.fillRect(x+1,y+1,width-2, height-2);  // fills in the rectagnle
     }
 
+    public void drawBrick(Graphics2D gtd){  // draw method takes a Graphics2D object for arg
+        Color darkRed = new Color(178, 23, 18);
+        gtd.setColor(Color.WHITE);  // sets color for border
+        gtd.fillRect(x,y-3,width,height+4);  // draws border
+        gtd.setColor(darkRed);  // sets color to white
+        gtd.fillRect(x+1,y+1,width-5, height-5);  // fills in the rectagnle
+    }
+
     public int set(int cameraX){
         x = startX - cameraX; // changes the x from the start to the camera movement
         hitBox.x = x; // sets the hitbox to x
