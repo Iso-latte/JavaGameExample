@@ -287,7 +287,9 @@ public class GamePanel extends JPanel implements ActionListener{
 
 
     void keyPressed(KeyEvent e){
-        if(e.getKeyChar() == ' '&& start == false) player.keyUp = true;
+        if(e.getKeyChar() == ' ' && start == false) player.keyUp = true;
+        if(e.getKeyChar() == ' ' && start == true) start = false;
+        if(e.getKeyChar() == ' ' && pause == true) pause = false;
     }
 
     void keyReleased(KeyEvent e){
