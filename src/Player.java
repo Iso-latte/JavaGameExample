@@ -14,8 +14,6 @@ public class Player { //THIS IS OUR PLAYER YAY!
 
     int width;  // width of char
     int height;  // height of char
-    
-    Color babyBlue;
 
     double xspeed;
     double yspeed;
@@ -42,7 +40,6 @@ public class Player { //THIS IS OUR PLAYER YAY!
         height = 75;  // size of HITBOX
         hitBox = new Rectangle(x, y, width, height); //This is the hitbox for the character
 
-        babyBlue = new Color(137,207,240);
     }
 
     public void set(){
@@ -128,11 +125,12 @@ public class Player { //THIS IS OUR PLAYER YAY!
 
     
     public void drawRight(Graphics2D gtd){
+        Color redColor = new Color(209,10,30);
         gtd.setColor(Color.BLACK);
         gtd.fillRect(x,y,width,height);
         gtd.setColor(Color.WHITE);
         gtd.fillRect(x+23,y+30,30, 27);
-        gtd.setColor(babyBlue);
+        gtd.setColor(redColor);
         gtd.fillRect(x,y+7,width,10);
     }
 

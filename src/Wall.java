@@ -47,11 +47,11 @@ public class Wall {
     }
 
     public void drawBrick(Graphics2D gtd){  // draw method takes a Graphics2D object for arg
-        Color darkRed = new Color(178, 23, 18);
-        gtd.setColor(Color.WHITE);  // sets color for border
+        Color babyBlue = new Color(173, 216, 230);
+        gtd.setColor(Color.BLACK);  // sets color for border
         gtd.fillRect(x,y-3,width,height+4);  // draws border
-        gtd.setColor(darkRed);  // sets color to white
-        gtd.fillRect(x+1,y+1,width-5, height-5);  // fills in the rectagnle
+        gtd.setColor(babyBlue);  // sets color to white
+        gtd.fillRect(x+1,y-2,width-2, height+1);  // fills in the rectagnle
     }
 
     public int set(int cameraX){

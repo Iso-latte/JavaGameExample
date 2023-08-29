@@ -52,7 +52,8 @@ public class Coin{
         gtd.fillOval(this.x-this.radius+8, this.y-this.radius+8, 2*(this.radius-10), 2*(this.radius-10));
         }
         else if (this.hit = true){
-            gtd.setColor(Color.LIGHT_GRAY);
+            Color babyBlue = new Color(173, 216, 230);
+            gtd.setColor(babyBlue);
             gtd.fillRect(this.x-this.radius, y-this.radius, this.radius*2, this.radius*2);
         }
     }

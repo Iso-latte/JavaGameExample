@@ -19,6 +19,8 @@ import java.awt.Point;
 
 public class GamePanel extends JPanel implements ActionListener{
 
+    Color backgroundColor = new Color(173, 216, 230);
+
     ArrayList<String> lifeCounter;  // The life counter at top left of streen
 
     MessageBox livesLabelThree; // top left label when char has 3 hearts
@@ -186,6 +188,9 @@ public class GamePanel extends JPanel implements ActionListener{
 
         //SETTING UP CHARACTER
         if(start == false){
+            gtd.setColor(this.backgroundColor);
+            gtd.fillRect(0,0,700,700);
+
             for(Coin coin: coins) coin.drawCircle(gtd);
 
             player.drawRight(gtd);
@@ -288,6 +293,10 @@ public class GamePanel extends JPanel implements ActionListener{
 
     public int getCameraX(){
         return this.cameraX;
+    }
+
+    public Color getBackgroundColor(){
+        return this.backgroundColor;
     }
 
 
