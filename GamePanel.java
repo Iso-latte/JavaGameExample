@@ -27,7 +27,9 @@ public class GamePanel extends JPanel implements ActionListener{
 
     int numOfDeaths;  // this is used to determine whether to restart and what # of hearts shows up on screen
 
-    int cameraX;  // controls the camera
+    int cameraX;  // controls the camera THE MAIN CAMERA
+
+    int cameraIntro=150;  // camera for animation
 
     Player player;  // this is the player object see Player.java for more info
 
@@ -121,8 +123,9 @@ public class GamePanel extends JPanel implements ActionListener{
             public void run(){
                 System.out.println(player.getPoints());
                 if (start == true){
-                    for(Wall introWall: introWalls) introWall.set(cameraX);
+                    for(Wall introWall: introWalls) introWall.set(cameraIntro);
                     repaint();
+                    cameraIntro+=1;
                 }
 
                 if (start == false){
