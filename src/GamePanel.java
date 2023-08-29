@@ -125,7 +125,7 @@ public class GamePanel extends JPanel implements ActionListener{
                 if (start == true){
                     for(Wall introWall: introWalls) introWall.set(cameraIntro);
                     repaint();
-                    cameraIntro+=1;
+                    cameraIntro+=1; // incrementing the intro screen
                 }
 
                 if (start == false){

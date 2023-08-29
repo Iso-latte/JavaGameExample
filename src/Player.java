@@ -27,7 +27,7 @@ public class Player { //THIS IS OUR PLAYER YAY!
     boolean keyUp;
     boolean keyDown;
 
-    int points;
+    int points=0;
 
 
     //CONSTRUCTOR: Sets up player given x and y and the panel its on
