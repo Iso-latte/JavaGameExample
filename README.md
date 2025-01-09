@@ -4,7 +4,7 @@ Dodge A Block is an engaging Java-based arcade-style game where the player contr
 
 ## Features
 
-- **Dynamic Gameplay:** Control the player using arrow keys to avoid walls and collect coins.
+- **Dynamic Gameplay:** Control the player using space key to avoid walls and collect coins.
 - **Gravity and Collision Mechanics:** Realistic physics to enhance gameplay experience.
 - **Points System:** Earn points by collecting coins scattered throughout the game.
 - **Reset Mechanism:** Automatic reset if the player falls out of bounds.
@@ -74,6 +74,8 @@ public class Player {
 ## Future Enhancements
 
 - Add sound effects and background music.
+- Add scoreboard
+- Random Terrain Gen
 - Introduce new levels with increasing difficulty.
 - Implement additional obstacles and power-ups.
 
